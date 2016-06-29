@@ -5,6 +5,7 @@ import javax.swing.JTextArea;
 
 public class CountWordsFrame extends JFrame {
 	private JTextArea messageArea;
+
 	public CountWordsFrame() {
 		super("単語分析");
 		setBounds(100, 100, 500, 500);
@@ -14,5 +15,9 @@ public class CountWordsFrame extends JFrame {
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
+	}
+
+	public JTextArea getMessageArea() {
+		return messageArea;
 	}
 }
